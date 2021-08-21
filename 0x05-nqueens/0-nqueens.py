@@ -6,7 +6,7 @@ import sys
 def print_board(board, n):
     """prints allocated possitions to the queen"""
     b = []
-    
+
     for i in range(n):
         for j in range(n):
             if j == board[i]:
@@ -16,7 +16,7 @@ def print_board(board, n):
 
 def safe_position(board, i, j, r):
     """Determines whether the position is safe for the queen"""
-    return board[i] in (j, j - i, i - r + j)
+    return board[i] in (j, j - i + r, i - r + j)
 
 
 def determine_positions(board, row, n):
