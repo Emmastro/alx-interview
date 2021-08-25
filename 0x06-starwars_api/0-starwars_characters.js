@@ -1,8 +1,7 @@
-//import request
 const request = require('request');
 
-let endpoint = 'https://swapi-api.hbtn.io/api';
-let filmId = process.argv[2];
+const endpoint = 'https://swapi-api.hbtn.io/api';
+const filmId = process.argv[2];
 
 request(`${endpoint}/films/${filmId}/`, (error, response, body) => {
   if (error) {
