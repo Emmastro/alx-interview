@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const request = require('request');
 
 const endpoint = 'https://swapi-api.hbtn.io/api';
