@@ -4,6 +4,6 @@
 
 def rotate_2d_matrix(matrix):
     """Rotate a 2D matrix 90 degrees clockwise."""
-    ziped = zip(*matrix)
+    ziped = zip(*reversed(matrix))
     for i, j in enumerate(ziped):
-        matrix[i] = list(reversed(j))
+        matrix[i] = list(j)
